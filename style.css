@@ -1,0 +1,75 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Container for the game */
+.container {
+    text-align: center;
+}
+
+/* Game board styling */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+/* Styling for each cell */
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+    border: 2px solid #222;
+    transition: background-color 0.3s;
+}
+
+.cell.x {
+    color: #4CAF50; /* Green for X */
+}
+
+.cell.o {
+    color: #F44336; /* Red for O */
+}
+
+/* Status text and button styling */
+.status {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #222;
+    color: white;
+    border: 2px solid #444;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #444;
+}
